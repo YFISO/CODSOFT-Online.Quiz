@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #3366cc; /* Change the color of the heading */
+        }
+
+        label {
+            display: block; /* Make labels display as block elements for better spacing */
+            margin-bottom: 8px; /* Add some bottom margin to labels */
+        }
+
+        input {
+            padding: 8px; /* Add padding to input fields for better appearance */
+            margin-bottom: 16px; /* Add some bottom margin to input fields */
+        }
+
+        form {
+            max-width: 400px; /* Set a maximum width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        a {
+            color: #ff9900; /* Change the color of the link */
+            text-decoration: none; /* Remove underlines from links */
+            font-weight: bold; /* Make the link text bold */
+            display: block; /* Make the link a block element for better spacing */
+            margin-top: 10px; /* Add some top margin to the link */
+        }
+
+        a:hover {
+            color: #cc3300; /* Change the color of the link on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Please enter your credentials:</h2>
+    <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <a href="index.html">Login</a>
+    </form>
+
+    <script>
+        function registerUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Save user data to localStorage (for demonstration purposes)
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+
+            alert("Registration successful! Username: " + username);
+        }
+    </script>
+
+</body>
+</html>

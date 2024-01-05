@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:burlywood;
+    margin: 0;
+    padding: 0;
+}
+
+#test {
+    background-color: #fff;
+    border: #ccc 1px solid;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
